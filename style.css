@@ -22,6 +22,11 @@ font-family: 'Abel', sans-serif; */
   margin-top: 10px auto;
   padding-left: 2.5em;
 }
+.logo img:hover {
+  transform: scale(1.3);
+  transition: 0.9s;
+}
+
 header {
   grid-area: header;
   background: white;
@@ -233,11 +238,82 @@ label {
   border: none;
   padding: 1px 10px 1px 10px;
   border-radius: 3px;
-  background  : darkgray;
-
+  background: darkgray;
 }
 
 #subscribe-btn:hover {
-background  : rgb(97, 95, 95);
-color: white;
-transition: 0.3s;}
+  background: rgb(97, 95, 95);
+  color: white;
+  transition: 0.3s;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 12px;
+    width: 95vw;
+  }
+  label {
+    display: inline-block;
+  }
+  .font-a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 12px;
+  }
+  .pricing {
+    width: 100vw;
+  }
+  .pricing-title {
+    padding: 9px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: "Abel", sans-serif;
+    margin: auto;
+  }
+  .overwrite {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: "Abel", sans-serif;
+    margin: auto;
+  }
+
+  div.info {
+    width: 100vw;
+  }
+
+  div.group {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+  }
+  .desc {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #nav-bar ,.ul-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 100vw;
+    box-sizing: border-box;
+  }
+header {
+  position: sticky;
+  top: 0;
+}
+}
+
